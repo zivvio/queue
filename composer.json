@@ -2,7 +2,7 @@
     "name": "zivvio/queue",
     "description": "Yii2 Queue Extension which supported DB, Redis, RabbitMQ, Beanstalk, SQS and Gearman",
     "type": "yii2-extension",
-    "keywords": ["yii", "queue", "async", "gii", "db", "redis", "rabbitmq", "beanstalk", "gearman", "sqs"],
+    "keywords": ["yii", "queue", "async", "db", "redis", "rabbitmq", "beanstalk", "gearman", "sqs"],
     "license": "BSD-3-Clause",
     "authors": [
         {
