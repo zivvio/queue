@@ -25,5 +25,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - run: sudo apt -y update
+      - run: sudo apt -y install docker-compose
+
       - name: PHP Unit tests for PHP ${{ matrix.php }}
         run: make test v=${{ matrix.php }}
