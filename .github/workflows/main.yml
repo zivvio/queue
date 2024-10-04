@@ -13,6 +13,7 @@ env:
   AWS_SQS_FIFO_ENABLED: ${{ secrets.AWS_SQS_FIFO_ENABLED }}
   AWS_SQS_FIFO_URL: ${{ secrets.AWS_SQS_FIFO_URL }}
   AWS_SQS_FIFO_MESSAGE_GROUP_ID: ${{ secrets.AWS_SQS_FIFO_MESSAGE_GROUP_ID }}
+
 jobs:
   phpunit:
     name: PHP ${{ matrix.php }}
@@ -20,9 +21,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [ '5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0' ]
+        php: ['8.2', '8.3']
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
       - name: PHP Unit tests for PHP ${{ matrix.php }}
         run: make test v=${{ matrix.php }}
