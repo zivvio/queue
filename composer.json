@@ -1,5 +1,5 @@
 {
-    "name": "yiisoft/yii2-queue",
+    "name": "zivvio/queue",
     "description": "Yii2 Queue Extension which supported DB, Redis, RabbitMQ, Beanstalk, SQS and Gearman",
     "type": "yii2-extension",
     "keywords": ["yii", "queue", "async", "gii", "db", "redis", "rabbitmq", "beanstalk", "gearman", "sqs"],
@@ -11,23 +11,19 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/yiisoft/yii2-queue/issues",
-        "source": "https://github.com/yiisoft/yii2-queue",
-        "docs": "https://github.com/yiisoft/yii2-queue/blob/master/docs/guide"
+        "issues": "https://github.com/zivvio/queue/issues",
+        "source": "https://github.com/zivvio/queue"
     },
     "require": {
-        "php": ">=5.5.0",
-        "yiisoft/yii2": "~2.0.14",
-        "symfony/process": "^3.3||^4.0||^5.0||^6.0||^7.0"
+        "php": ">=8.0",
+        "zivvio/zivvio": ">=5.0.0",
+        "symfony/process": "^5.0||^6.0||^7.0"
     },
     "require-dev": {
-        "yiisoft/yii2-redis": "~2.0.0",
         "php-amqplib/php-amqplib": "^2.8.0||^3.0.0",
         "enqueue/amqp-lib": "^0.8||^0.9.10||^0.10.0",
         "pda/pheanstalk": "~3.2.1",
         "opis/closure": "*",
-        "yiisoft/yii2-debug": "~2.1.0",
-        "yiisoft/yii2-gii": "~2.2.0",
         "phpunit/phpunit": "4.8.34",
         "aws/aws-sdk-php": ">=2.4",
         "enqueue/stomp": "^0.8.39||^0.10.0",
@@ -36,6 +32,8 @@
     "suggest": {
         "ext-pcntl": "Need for process signals.",
         "yiisoft/yii2-redis": "Need for Redis queue.",
+        "yiisoft/yii2-debug": "Need for debug.",
+        "yiisoft/yii2-gii": "Need for gii.",
         "pda/pheanstalk": "Need for Beanstalk queue.",
         "php-amqplib/php-amqplib": "Need for AMQP queue.",
         "enqueue/amqp-lib": "Need for AMQP interop queue.",
@@ -65,14 +63,14 @@
     },
     "config": {
         "allow-plugins": {
-            "yiisoft/yii2-composer": true,
+            "zivvio/composer": true,
             "cweagans/composer-patches": true,
             "php-http/discovery": true
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.x-dev"
+            "dev-main": "6.0.x-dev"
         },
         "composer-exit-on-patch-failure": true,
         "patches": {
