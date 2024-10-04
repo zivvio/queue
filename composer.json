@@ -14,6 +14,8 @@
         "issues": "https://github.com/zivvio/queue/issues",
         "source": "https://github.com/zivvio/queue"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=8.0",
         "zivvio/zivvio": ">=5.0.0",
