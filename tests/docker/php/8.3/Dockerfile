@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 php:8.3.5-cli
+FROM --platform=linux/amd64 php:8.3-cli
 
 RUN apt-get update \
    && apt-get install -y unzip curl zlib1g-dev libzip-dev libicu-dev libpq-dev libgearman-dev
