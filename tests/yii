@@ -6,7 +6,7 @@ defined('YII_ENV') or define('YII_ENV', 'test');
 defined('YII_ENV_TEST') or define('YII_ENV_TEST', false);
 
 require(__DIR__ . '/../vendor/autoload.php');
-require(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
+require(__DIR__ . '/../vendor/zivvio/zivvio/framework/Yii.php');
 
 Yii::setAlias('@yii/queue', dirname(__DIR__) . '/src');
 Yii::setAlias('@yii/queue/amqp', dirname(__DIR__) . '/src/drivers/amqp');
